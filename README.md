@@ -1,6 +1,6 @@
 # Tower Defense Game
 
-Welcome to the Tower Defense Game project! This game is a 3D tower defense created with Unity. The objective is to strategically place turrets along a predefined path to stop waves of enemy units from reaching their destination. As the player progresses through levels, they face tougher enemies and gain access to new turrets.
+This game is a 3D tower defense created with Unity. The objective is to strategically place turrets along a predefined path to stop waves of enemy units from reaching their destination. As the player progresses through levels, they face tougher enemies and gain access to new turrets.
 
 Once player gains enough money to obtain a turret, they will have random chances to get one of 3 turrets
 
