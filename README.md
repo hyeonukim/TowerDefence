@@ -36,63 +36,76 @@ These include:
 - [Waypoints](#waypoints)
 
 ## BuildManager
-
-The `BuildManager` class manages turret building and selection.
+- **Description**: Manages turret building, selection, and placement within a tower defense game.
+- **Usage**: Allows players to select nodes for turret placement, choose turrets to build, and handles the actual construction process.
+- **Implementation**: Utilizes Unity's MonoBehaviour for scripting. Provides methods for selecting nodes and turrets, checking affordability, and building turrets on selected nodes.
 
 ## Bullet
-
-The `Bullet` class handles the behavior of bullets fired by turrets.
+- **Description**: Represents projectiles fired by turrets.
+- **Usage**: Seeks and damages enemy targets, with optional explosion effects.
+- **Implementation**: Moves towards the target, triggers effects upon impact, and applies damage to enemies.
 
 ## CameraController
-
-The `CameraController` class controls the movement and interaction of the in-game camera.
+- **Description**: Controls the in-game camera for player movement and zoom.
+- **Usage**: Enables panning, scrolling, and toggling of camera movement during gameplay.
+- **Implementation**: Utilizes Unity's Input system for player controls and adjusts camera position accordingly.
 
 ## Enemy
-
-The `Enemy` class defines the behavior of enemy units.
+- **Description**: Represents enemy units in the game.
+- **Usage**: Moves along waypoints, takes damage, and triggers death effects.
+- **Implementation**: Utilizes waypoints for movement, updates health with damage, and handles death events.
 
 ## EnemyMovement
-
-The `EnemyMovement` class handles the movement of enemy units along waypoints.
+- **Description**: Controls the movement of enemy units along waypoints.
+- **Usage**: Moves enemies towards the next waypoint in the predefined path.
+- **Implementation**: Retrieves waypoints and moves the enemy towards the next destination.
 
 ## GameManager
-
-The `GameManager` class manages the overall game state, including game ending conditions.
+- **Description**: Manages game state, UI, and player input.
+- **Usage**: Monitors enemy count, player kills, and triggers game end conditions.
+- **Implementation**: Updates UI, checks enemy count thresholds, and handles game ending.
 
 ## GameOver
-
-The `GameOver` class displays the game over UI and allows players to retry.
+- **Description**: Displays game over information.
+- **Usage**: Activates upon game end and shows the player's level.
+- **Implementation**: Retrieves and displays the player's level.
 
 ## MoneyUI
-
-The `MoneyUI` class updates and displays the in-game currency.
+- **Description**: Displays the player's current money.
+- **Usage**: Updates the UI to show the player's available funds.
+- **Implementation**: Retrieves and displays the player's money.
 
 ## Node
-
-The `Node` class represents buildable nodes on the game grid where turrets can be placed.
+- **Description**: Represents build nodes on the game map.
+- **Usage**: Handles node selection, turret building, and UI interactions.
+- **Implementation**: Allows building turrets on nodes.
 
 ## PlayerStats
-
-The `PlayerStats` class keeps track of player-related statistics, such as money, turret, rank, level, and enemy counts.
+- **Description**: Manages player-related statistics such as money, turret type, rank, level, and enemy counts.
+- **Usage**: Tracks and updates player stats throughout the game.
+- **Implementation**: Initializes and updates player stats, such as money and level, during gameplay.
 
 ## ResultUI
-
-The `ResultUI` class displays the result, including the selected turret and its rank.
+- **Description**: Displays the result of the game, including the turret used and its rank.
+- **Usage**: Retrieves and displays information based on the player's performance.
+- **Implementation**: Dynamically updates UI elements to reflect the player's turret and rank.
 
 ## Shop
-
-The `Shop` class handles turret purchasing and randomization.
+- **Description**: Handles the in-game shop functionality, including purchasing turrets with random ranks.
+- **Usage**: Manages turret lists, random turret selection, and turret purchase logic.
+- **Implementation**: Integrates with BuildManager to select and purchase turrets based on player choices.
 
 ## Turret
-
-The `Turret` class defines the behavior of turrets, including shooting and targeting.
+- **Description**: Represents the behavior and attributes of turrets in the game.
+- **Usage**: Handles targeting, shooting, and special effects for both bullet and laser turrets.
+- **Implementation**: Utilizes Unity's MonoBehaviour for turret behavior, including shooting and targeting logic.
 
 ## WaveSpawner
-
-The `WaveSpawner` class controls the spawning of waves of enemies.
+- **Description**: Spawns waves of enemies at regular intervals.
+- **Usage**: Controls the timing and count of enemy waves, updating the game level accordingly.
+- **Implementation**: Utilizes Coroutine to spawn enemy waves and dynamically adjusts wave count based on game level.
 
 ## Waypoints
-
-The `Waypoints` class defines the path for enemy movement through waypoints.
-
-Feel free to customize and expand this `README.md` file based on your project's specific details and features.
+- **Description**: Manages waypoints for enemy movement.
+- **Usage**: Stores and retrieves waypoint information for enemy pathfinding.
+- **Implementation**: Initializes waypoints based on child objects and provides access for enemy movement.
